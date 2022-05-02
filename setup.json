@@ -1,0 +1,13 @@
+{
+  "name": "aiida-ccc",
+  "author": "lbeal",
+  "version": "0.1.0",
+  "description": "ccc scheduler plugin for aiida, as used on the CEA Irene machine",
+  "entry_points": {
+    "aiida.schedulers":[
+      "ccc = aiida_ccc.ccc:CCCScheduler"
+    ]
+  },
+  "setup_requires": ["reentry"],
+  "reentry_register": true
+}
